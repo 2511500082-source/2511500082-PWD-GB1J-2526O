@@ -1,2 +1,3 @@
 # pertemuan-02
-jens*
+NIM : 2511500082
+Nama : Maharani 
