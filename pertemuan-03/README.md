@@ -3,8 +3,7 @@
 Nim : 2511500082<br>
 Nama : Maharani Indah Saputri<br><br>
 
-Hari ini, Kamis 09 Oktober 2025, saya belajar:
+Hari ini, Kamis 09 Oktober 2025, saya mempelajari:
 <ol>
-  <li>copy-paste isi emmet.html (pertemuan-02) ke index.html (pertemuan-03)<li>
-  
-  <ol>
+  <li>copy-paste isi emmet.html (pertemuan-02) ke index.html (pertemuan-03)</li>
+ </ol> 
