@@ -62,3 +62,77 @@
 </body>
 
 </html>
+
+
+<style>
+    #contact {
+        background-image: url('sanrio-my-melody.gif');
+        /* Ganti dengan URL GIF kamu */
+        background-size: cover;
+        background-position: center;
+        padding: 60px 20px;
+        color: white;
+        position: relative;
+    }
+
+    /* Tambahan lapisan gelap agar teks terlihat jelas */
+    #contact::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        /* transparansi gelap */
+        z-index: 0;
+    }
+
+    #contact h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    #contact form {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+        z-index: 1;
+    }
+
+    #contact label {
+        font-weight: bold;
+    }
+
+    #contact input,
+    #contact textarea {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    #contact button {
+        padding: 10px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+    #contact button[type="reset"] {
+        background-color: #f44336;
+    }
+
+    #contact button:hover {
+        opacity: 0.9;
+    }
+</style>
