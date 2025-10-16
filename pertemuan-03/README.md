@@ -9,4 +9,5 @@ Hari ini, Kamis 09 Oktober 2025, saya mempelajari:
   <li>membuat struktur form untuk section contact</li>
   <li>styling selector ID #about<li>
   <li>styling selector ID #about elemen h2<li>
+  <li>styling selector ID #about elemen p<li>
  </ol> 
