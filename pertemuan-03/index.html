@@ -1,163 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
+<<!DOCTYPE html>
+    <html lang="en">
 
-<head /<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Judul Halaman</title>
-    <style>
-        #about {
-            background-color: #FFFFFF;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 700px;
-            margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        #about h2 {
-            color: #FFE0E5;
-            border-bottom: 2px solid #FFE0E5;
-            padding-bottom: 6px;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
-    </style>
-</head>
-#about p {
-display: flex;
-justify-content: flex-start;
-align-items: baseline;
-margin: 0;
-padding: 6px 0;
-border-bottom: 1px solid #e6e6e6;
-}
-
-<body>
-    <header>
-        <h1>Ini Header</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Selamat Datang</h2>
-            <p>Ini contoh paragraf HTML.</p>
-        </section>
-        <section id="about">
-            <h2>Tentang saya</h2>
-            <p><strong>NIM:</strong>2511500082 &trade;</p>
-            <p><STRONG>Nama Lengkap:</STRONG>Maharani Indah Saputri &#9728;/</p>
-            <p><strong>Tempat Lahir:</strong>Banyumas &#9729;</p>
-            <p><strong>Tanggal Lahir:</strong>08 Oktober 2007 &#10052;</p>
-            <p><strong>Hobby:</strong>Main Game,Nonton Film,Dengar Musik &#9834;</p>
-            <p><strong>Pasangan:<strong>Belum ada &#9825;</p>
-            <p><strong>Pekerjaan:</strong>Belum ada &#10024;</p>
-            <p><strong>Nama orang tua:</strong>Bapak Sumarno dan Ibu Sumarni &#10083;</p>
-            <p><strong>Nama kakak:</strong>Sayalah kakaknya &#9749;</p>
-            <p><strong>Nama Adik:</strong>Maharina Cahya Saputri dan Ridho Alviansyach &#9786;</p>
-            <p>HTML digunakan untuk struktur halaman web.</p>
-        </section>
-        <section id="contact">
-            <h2>Kontak Saya</h2>
-            <form action="" method="get">
-                <input type="color" <label for="txtNama">Nama:</label>
-                <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama lengkap" required
-                    autocomplete="name">
-
-                <label for="txtEmail">Email:</label>
-                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan alamat email" required
-                    autocomplete="email">
-
-                <label for="txtEmail">Pesan:</label>
-                <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
-
-                <button> type="submit">Kirim</button>
-                <button> type="reset">Batal</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; &#9786; 2025 Maharani Indah Saputri 2511500082</p>
-    </footer>
-</body>
-
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Judul Halaman</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                background-color: #f2f2f2;
+                color: #333;
+            }
 
 
-<style>
-    #contact {
-        background-image: url('sanrio-my-melody.gif');
-        /* Ganti dengan URL GIF kamu */
-        background-size: cover;
-        background-position: center;
-        padding: 60px 20px;
-        color: white;
-        position: relative;
-    }
+            #about,
+            #contact {
+                background-color: #f794ce;
+                border-radius: 10px;
+                padding: 20px;
+                max-width: 700px;
+                margin: 20px auto;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
 
-    /* Tambahan lapisan gelap agar teks terlihat jelas */
-    #contact::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.6);
-        /* transparansi gelap */
-        z-index: 0;
-    }
+            #contact h2,
+            #about h2 {
+                color: #0e0d0d;
+                border-bottom: 2px solid #0f0f0f;
+                padding-bottom: 6px;
+                margin-top: 0;
+                margin-bottom: 16px;
+            }
 
-    #contact h2 {
-        text-align: center;
-        margin-bottom: 30px;
-        position: relative;
-        z-index: 1;
-    }
+            #contact label,
+            #about p {
+                display: flex;
+                justify-content: flex-start;
+                align-items: baseline;
+                margin: 0;
+                padding: 6px 0;
+                border-bottom: 1px solid #050505;
+            }
 
-    #contact form {
-        max-width: 600px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        position: relative;
-        z-index: 1;
-    }
+            #contact label span,
+            #about strong {
+                min-width: 180px;
+                color: #121212;
+                font-weight: 600;
+                text-align: right;
+                padding-right: 16px;
+                flex-shrink: 0;
+            }
 
-    #contact label {
-        font-weight: bold;
-    }
+            #contact {
+                background-image: url('sanrio-my-melody.gif');
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+                padding: 20px;
+                max-width: 700px;
+                margin: 20px auto;
+                color: white;
+                position: relative;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
 
-    #contact input,
-    #contact textarea {
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        font-size: 1rem;
-    }
+            form input,
+            form textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 14px;
+            }
 
-    #contact button {
-        padding: 10px;
-        font-size: 1rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        background-color: #4CAF50;
-        color: white;
-        transition: background-color 0.3s ease;
-    }
+            form button[type="submit"] {
+                padding: 10px 20px;
+                margin-right: 10px;
+                background-color: #007BFF;
+                /* warna biru */
+                border: none;
+                color: white;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 14px;
+            }
 
-    #contact button[type="reset"] {
-        background-color: #f44336;
-    }
+            form button[type="reset"] {
+                padding: 10px 20px;
+                background-color: #dc3545;
+                /* warna merah */
+                border: none;
+                color: white;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 14px;
+            }
 
-    #contact button:hover {
-        opacity: 0.9;
-    }
-</style>
+            form button:hover {
+                opacity: 0.9;
+                transform: scale(1.02);
+            }
+
+            footer {
+                background-color: #3f7bfa;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin-top: 40px;
+            }
+
+            @media (max-width: 600px) {
+
+                #about p,
+                #contact label {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                #about strong,
+                #contact label span {
+                    text-align: left;
+                    padding-right: 0;
+                    margin-bottom: 5px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Ini Header</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h2>Selamat Datang</h2>
+                <p>Ini contoh paragraf HTML.</p>
+            </section>
+            <section id="about">
+                <h2>Tentang Saya</h2>
+                <p><strong>NIM:</strong> 2511500082 &trade;</p>
+                <p><strong>Nama Lengkap:</strong> Maharani Indah Saputri &#9728;</p>
+                <p><strong>Tempat Lahir:</strong> Banyumas &#9729;</p>
+                <p><strong>Tanggal Lahir:</strong> 08 Oktober 2007 &#10052;</p>
+                <p><strong>Hobby:</strong> Main Game,Nonton Film,Dengar Musik &#9834;</p>
+                <p><strong>Pasangan:</strong> Tidak ada</p>
+                <p><strong>Pekerjaan:</strong> Belum ada</p>
+                <p><strong>Nama Orang Tua:</strong> Bapak Sumarno dan Ibu Sumarni &#10083;</p>
+                <p><strong>Nama Kakak:</strong> Sayalah kakaknya &#9749;</p>
+                <p><strong>Nama Adek:</strong> Maharina dan Ridho &#9786;</p>
+
+            </section>
+            <section id="contact">
+                <h2>Kontak Saya</h2>
+                <form action="" method="get">
+
+                    <label for="txtNama">Nama:</label>
+                    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required
+                        autocomplete="name">
+
+                    <label for="txtEmail"></label>
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required
+                        autocomplete="email">
+
+                    <label for="txtPesan">Pesan:</label>
+                    <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."
+                        required></textarea>
+
+                    <button type="submit">Kirim</button>
+                    <button type="reset">Batal</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Maharani Indah Saputri 2511500082 </p>
+        </footer>
+    </body>
+
+    </html>
