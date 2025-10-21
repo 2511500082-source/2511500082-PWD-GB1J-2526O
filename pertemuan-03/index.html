@@ -76,6 +76,7 @@
                 font-size: 14px;
             }
 
+
             form button[type="submit"] {
                 padding: 10px 20px;
                 margin-right: 10px;
@@ -126,6 +127,44 @@
                     padding-right: 0;
                     margin-bottom: 5px;
                 }
+            }
+        </style>
+        <style>
+            #contact-form fieldset {
+                ...
+            }
+
+            #contact-form legend {
+                ...
+            }
+
+            #contact-form p {
+                ...
+            }
+
+            #contact-form label {
+                ...
+            }
+
+            #contact-form input,
+            #contact-form textarea {
+                ...
+            }
+
+            .form-buttons {
+                ...
+            }
+
+            #contact-form button[type="submit"] {
+                ...
+            }
+
+            #contact-form button[type="reset"] {
+                ...
+            }
+
+            #contact-form button:hover {
+                ...
             }
         </style>
         <style>
@@ -190,23 +229,33 @@
 
             </section>
             <section id="contact">
-                <h2>Kontak Saya</h2>
-                <form action="" method="get">
+                <form action="" method="get" id="contact-form">
+                    <fieldset>
+                        <legend>Kontak Saya</legend>
 
-                    <label for="txtNama">Nama:</label>
-                    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required
-                        autocomplete="name">
+                        <p>
+                            <label for="txtNama">Nama:</label>
+                            <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama Anda" required
+                                autocomplete="name">
+                        </p>
 
-                    <label for="txtEmail">Email:</label>
-                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required
-                        autocomplete="email">
+                        <p>
+                            <label for="txtEmail">Email:</label>
+                            <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email Anda" required
+                                autocomplete="email">
+                        </p>
 
-                    <label for="txtPesan">Pesan:</label>
-                    <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."
-                        required></textarea>
+                        <p>
+                            <label for="txtPesan">Pesan:</label>
+                            <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan Anda..."
+                                required></textarea>
+                        </p>
 
-                    <button type="submit">Kirim</button>
-                    <button type="reset">Batal</button>
+                        <p class="form-buttons">
+
+
+                            <button type="submit">Kirim</button>
+                            <button type="reset">Batal</button>
                 </form>
             </section>
         </main>
