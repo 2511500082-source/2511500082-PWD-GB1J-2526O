@@ -105,7 +105,7 @@ header li a:active {
     header li a {
         display: block;
         padding: 12px 14px;
-        border: 1px solid #99f0ffe7;
+        border: 1px solid #1a1b1b;
         background: rgba(255, 255, 255, .08);
         backdrop-filter: saturate(120%);
     }
