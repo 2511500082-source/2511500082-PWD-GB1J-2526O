@@ -73,10 +73,10 @@ header li a:focus {
     outline: 2px solid #fff;
     outline-offset: 2px;
     border-radius: 6px;
-    background-color: rgba(153, 243, 255, 0.719);
+    background-color: #ADD8E6;
 }
 
 header li a:active {
-    background-color: rgba(153, 255, 175, 0.767);
+    background-color: #90ee90;
     transform: translateY(1px);
 }
