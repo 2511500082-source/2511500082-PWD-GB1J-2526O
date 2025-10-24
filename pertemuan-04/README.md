@@ -6,4 +6,6 @@ Nama : Maharani Indah Saputri<br><br>
 hari ini, Kamis 16 oktober 2025, saya mempelajari:
 <ol>
   <li>copy-paste isi index.html (pertemuan-03) ke index.html (pertemuan-04)<li>
-  </ol>ganti internal css ke eksternal css
+  <li>ganti internal css ke eksternal css<li>
+  <li>aturan css untuk body dan global reset<li>
+<ol>
