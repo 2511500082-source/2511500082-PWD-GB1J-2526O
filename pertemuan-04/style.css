@@ -55,3 +55,10 @@ header li a {
 #home p {
     text-align: justify;
 }
+
+footer {
+    background-color: #f794ce;
+    color: #0f0f0f;
+    text-align: center;
+    padding: 10px;
+}
