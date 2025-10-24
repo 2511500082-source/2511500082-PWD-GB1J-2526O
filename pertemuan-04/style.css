@@ -62,3 +62,21 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+header li a:hover {
+    background-color: #ff99c2;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+header li a:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+    border-radius: 6px;
+    background-color: rgba(153, 243, 255, 0.719);
+}
+
+header li a:active {
+    background-color: rgba(153, 255, 175, 0.767);
+    transform: translateY(1px);
+}
