@@ -6,7 +6,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Judul Halaman</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
 
+        #about,
+        #contact {
+            background-color: #f794ce;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact h2,
+        #about h2 {
+            color: #0e0d0d;
+            border-bottom: 2px solid #0f0f0f;
+            padding-bottom: 6px;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        #contact label {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+            padding: 6px 0;
+            border-bottom: 1px solid #050505;
+        }
+
+        #about p {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin: 0;
+            padding: 6px 0;
+            border-bottom: 1px solid #050505;
+        }
+
+        #about p,
+        #contact label {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin: 0;
+            padding: 6px 0;
+            border-bottom: 1px;
+        }
+
+        #contact label>span {
+            min-width: 180px;
+            color: #050505;
+            font-weight: 600;
+            text-align: right;
+            padding-right: 16px;
+            flex-shrink: 0;
+        }
+
+        #about strong {
+            min-width: 180px;
+            color: #050505;
+            font-weight: 600;
+            text-align: right;
+            padding-right: 16px;
+            flex-shrink: 0;
+        }
+
+        #about strong,
+        #contact label>span {
+            min-width: 180px;
+            color: #050505;
+            font-weight: 600;
+            text-align: right;
+            padding-right: 16px;
+            flex-shrink: 0;
+        }
+
+        #contact {
+            background-image: url('sanrio-my-melody.gif');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            color: #050505;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.952);
+
+        }
+
+        #contact input,
+        #contact textarea {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 8px;
+            color: #0f0f0f;
+            font-weight: normal;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #contact button {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            margin-right: 8px;
+
+        }
+
+        form button:[type="submit"] {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #ff99c2;
+            border: none;
+            color: #0f0f0f;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        form button:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        footer {
+            background-color: #f794ce;
+            color: #0f0f0f;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+
+            #contact input,
+            #contact textarea,
+            #contact button {
+                width: 100%;
+            }
+
+            #about p,
+            #contact label {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #about strong,
+            #contact label span {
+                text-align: left;
+                padding-right: 0;
+                margin-bottom: 2px;
+            }
+    </style>
 </head>
 
 <body>
