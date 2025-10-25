@@ -10,4 +10,5 @@ Hari ini, Kamis 23 Oktober 2025, saya mempelajari:
  <li>styling untuk class menu-toggle</li>
  <li>styling untuk class toggle mobile</li>
  <li>styling elemen nav mobile</li>
+ <li>styling class active</li>
 </ol>
