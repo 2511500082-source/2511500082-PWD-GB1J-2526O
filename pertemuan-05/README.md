@@ -15,4 +15,5 @@ Hari ini, Kamis 23 Oktober 2025, saya mempelajari:
  <li>event klik pada tombol hamburger</li>
  <li>Latihan Validasi Formulir Sebelum Submit&Ganti Teks Tombol Saat Menu Aktif</li>
  <li>Latihan Ucapan Otomatis Saat Halaman Dimuat</li>
+ <li>Latihan Hitung Jumlah Karakter Pesan</li>
 </ol>
