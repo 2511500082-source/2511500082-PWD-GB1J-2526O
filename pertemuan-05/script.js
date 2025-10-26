@@ -7,6 +7,7 @@ document.getElementById('menuToggle').addEventListener('click', function () {
     } else {
         this.textContent = "\u2630";
     }
+
 });
 
 document.querySelector("form").addEventListener("submit", function (e) {
@@ -95,4 +96,13 @@ window.addEventListener("resize", () => {
         const target = document.getElementById(small.dataset.forId);
         if (target) alignErrorMessage(small, target);
     });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const homeSection = document.getElementById("home");
+        const ucapan = document.createElement("p");
+        ucapan.textContent = "Halo! Selamat datang di halaman saya!";
+        homeSection.appendChild(ucapan);
+    });
+
 });
