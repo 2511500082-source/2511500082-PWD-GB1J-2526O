@@ -1,7 +1,6 @@
 document.getElementById('menuToggle').addEventListener('click', function () {
     const nav = document.querySelector('nav').classList.toggle('active');
     nav.classList.toggle('active');
-
     if (nav.classList.contains('active')) {
         this.textContent = "\u2716";
     } else {
@@ -30,7 +29,8 @@ document.querySelector("form").addEventListener("submit", function (e) {
     if (email.value.trim() === "") {
         showError(email, "Email wajib diisi.");
         isValid = false;
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+    } 
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
         showError(email, "Format email tidak valid. Contoh: nama@mail.com");
         isValid = false;
     }
@@ -92,11 +92,11 @@ function alignErrorMessage(smallEl, inputEl) {
 }
 
 window.addEventListener("resize", () => {
-    document.querySelectorAll(".error-msg").forEach(small => {
+    document.querySelectorAll(".error-msg").forEach(small =>{ 
         const target = document.getElementById(small.dataset.forId);
         if (target) alignErrorMessage(small, target);
     });
-
+});
 
     document.addEventListener("DOMContentLoaded", function () {
         const homeSection = document.getElementById("home");
@@ -116,7 +116,7 @@ window.addEventListener("resize", () => {
 
             if (!wrapper) {
                 wrapper = document.createElement('div');
-                wrapper.data - wrapper = 'pesan-wrapper';
+                wrapper.dataset.wrapper = 'pesan-wrapper';
                 wrapper.style.width = '100%';
                 wrapper.style.flex = '1';
                 wrapper.style.flexDirection = 'column';
@@ -183,3 +183,4 @@ window.addEventListener("resize", () => {
             const panjang = this.value.length;
             document.getElementById("charCount").textContent = panjang + "/200 karakter";
         });
+    });  
