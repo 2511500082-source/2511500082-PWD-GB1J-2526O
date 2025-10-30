@@ -8,6 +8,9 @@ this.textContent = "\u2716";
 this.textContent = "\u2630";
 }
 });
+document.getElementById("menuToggle").addEventListener("click", function () {
+document.querySelector("nav").classList.toggle("active");
+});
 
 document.querySelector("form").addEventListener("submit", function (e) {
     const nama = document.getElementById("txtNama");
