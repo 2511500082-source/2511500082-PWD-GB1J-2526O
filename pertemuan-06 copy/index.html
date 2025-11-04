@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan IPK</title>
+    <style>
+        body {
+           background-color: #ffe4ec;
+           border-radius: 12px;
+           padding: 20px;
+           box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+           max-width: 700px;
+           margin: 20px auto;
+        }
+        h2 {
+           color: #d63384;
+           text-align: center;
+           margin-bottom: 20px;
+    }
+        .matkul {
+           background-color: #fce4ec;
+           padding: 15px;
+           margin-bottom: 15px;
+           border-radius: 10px;
+    }
+    b {color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<section id="ipk">
+  <h2>Perhitungan IPK Mahasiswa</h2>
+    <h2>💗 Form Input dan Data Mahasiswa 💗</h2>
+    <form id="formMahasiswa">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="nilai">Nilai:</label>
+        <input type="number" id="nilai" name="nilai" required>
+
+        <button type="submit">Tambah ke Tabel</button>
+    </form>
+    
+    <?php
+    $namaMatkul1 = "Algoritma dan Struktur Data";
+    $sksMatkul1 = 4; $nilaiHadir1 = 90; $nilaiTugas1 = 85; $nilaiUTS1 = 80; $nilaiUAS1 = 88;
+
+    $namaMatkul2 = "Agama";
+    $sksMatkul2 = 3; $nilaiHadir2 = 70; $nilaiTugas2 = 50; $nilaiUTS2 = 60; $nilaiUAS2 = 80;
+
+    $namaMatkul3 = "Basis Data";
+    $sksMatkul3 = 3; $nilaiHadir3 = 85; $nilaiTugas3 = 80; $nilaiUTS3 = 90; $nilaiUAS3 = 87;
+
+    $namaMatkul4 = "Pemrograman Web";
+    $sksMatkul4 = 3; $nilaiHadir4 = 88; $nilaiTugas4 = 92; $nilaiUTS4 = 95; $nilaiUAS4 = 90;
+
+    $namaMatkul5 = "Kalkulus";
+    $sksMatkul5 = 3; $nilaiHadir5 = 69; $nilaiTugas5 = 85; $nilaiUTS5 = 100; $nilaiUAS5 = 95;
+
+    function hitungData($hadir, $tugas, $uts, $uas, $sks) {
+    $nilaiAkhir = (0.1 * $hadir) + (0.2 * $tugas) + (0.3 * $uts) + (0.4 * $uas);
+
+    if ($hadir < 70) {
+      $grade = "E"; $mutu = 0; $status = "GAGAL";
+    } elseif ($nilaiAkhir >= 91) {
+      $grade = "A"; $mutu = 4.00; $status = "LULUS";
+    } elseif ($nilaiAkhir >= 81) {
+      $grade = "A-"; $mutu = 3.70; $status = "LULUS";
+    } elseif ($nilaiAkhir >= 76) {
+      $grade = "B+"; $mutu = 3.30; $status = "LULUS";
+    } elseif ($nilaiAkhir >= 71) {
+      $grade = "B"; $mutu = 3.00; $status = "LULUS";
+    } elseif ($nilaiAkhir >= 66) {
+      $grade = "B-"; $mutu = 2.70; $status = "LULUS";
+    } elseif ($nilaiAkhir >= 61) {
+      $grade = "C+"; $mutu = 2.30; $status = "LULUS";
+    } elseif ($nilaiAkhir >= 56) {
+      $grade = "C"; $mutu = 2.00; $status = "LULUS";
+    } elseif ($nilaiAkhir >= 51) {
+      $grade = "C-"; $mutu = 1.70; $status = "LULUS";
+    } elseif ($nilaiAkhir >= 36) {
+      $grade = "D"; $mutu = 1.00; $status = "GAGAL";
+    } else {
+      $grade = "E"; $mutu = 0.00; $status = "GAGAL";
+    }
+
+    $bobot = $mutu * $sks;
+    return array($nilaiAkhir, $grade, $mutu, $bobot, $status);
+  }
+
+  list($nilaiAkhir1, $grade1, $mutu1, $bobot1, $status1) = hitungData($nilaiHadir1,$nilaiTugas1,$nilaiUTS1,$nilaiUAS1,$sksMatkul1);
+  list($nilaiAkhir2, $grade2, $mutu2, $bobot2, $status2) = hitungData($nilaiHadir2,$nilaiTugas2,$nilaiUTS2,$nilaiUAS2,$sksMatkul2);
+  list($nilaiAkhir3, $grade3, $mutu3, $bobot3, $status3) = hitungData($nilaiHadir3,$nilaiTugas3,$nilaiUTS3,$nilaiUAS3,$sksMatkul3);
+  list($nilaiAkhir4, $grade4, $mutu4, $bobot4, $status4) = hitungData($nilaiHadir4,$nilaiTugas4,$nilaiUTS4,$nilaiUAS4,$sksMatkul4);
+  list($nilaiAkhir5, $grade5, $mutu5, $bobot5, $status5) = hitungData($nilaiHadir5,$nilaiTugas5,$nilaiUTS5,$nilaiUAS5,$sksMatkul5);
+
+  $totalBobot = $bobot1 + $bobot2 + $bobot3 + $bobot4 + $bobot5;
+  $totalSKS   = $sksMatkul1 + $sksMatkul2 + $sksMatkul3 + $sksMatkul4 + $sksMatkul5;
+  $IPK = $totalBobot / $totalSKS;
+
+  for ($i = 1; $i <= 5; $i++) {
+    $namaMatkul = ${"namaMatkul$i"};
+    $sks = ${"sksMatkul$i"};
+    $nilaiHadir = ${"nilaiHadir$i"};
+    $nilaiTugas = ${"nilaiTugas$i"};
+    $nilaiUTS = ${"nilaiUTS$i"};
+    $nilaiUAS = ${"nilaiUAS$i"};
+    $nilaiAkhir = ${"nilaiAkhir$i"};
+    $grade = ${"grade$i"};
+    $mutu = ${"mutu$i"};
+    $bobot = ${"bobot$i"};
+    $status = ${"status$i"};
+
+    echo "<div class='matkul'>";
+    echo "<b>Nama Mata Kuliah ke-$i:</b> $namaMatkul<br>";
+    echo "SKS: $sks<br>";
+    echo "Kehadiran: $nilaiHadir<br>";
+    echo "Tugas: $nilaiTugas<br>";
+    echo "UTS: $nilaiUTS<br>";
+    echo "UAS: $nilaiUAS<br>";
+    echo "Nilai Akhir: " . number_format($nilaiAkhir,2) . "<br>";
+    echo "Grade: $grade<br>";
+    echo "Angka Mutu: $mutu<br>";
+    echo "Bobot: " . number_format($bobot,2) . "<br>";
+    echo "Status: $status<br>";
+    echo "</div>";
+  }
+
+  echo "<hr>";
+  echo "<b>Total Bobot:</b> " . number_format($totalBobot,2) . "<br>";
+  echo "<b>Total SKS:</b> $totalSKS<br>";
+  echo "<b>IPK:</b> " . number_format($IPK,2);
+  ?>
+</section>
+
+</body>
+</html>
