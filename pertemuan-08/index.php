@@ -19,17 +19,16 @@ endif;
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Judul Halaman</title>
+  <title>Biodata Sederhana Mahasiswa</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
   <header>
-    <h1>Ini Header</h1>
+    <h1>Biodata Sederhana Mahasiswa</h1>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
       &#9776;
     </button>
@@ -37,6 +36,7 @@ endif;
       <ul>
         <li><a href="#home">Beranda</a></li>
         <li><a href="#about">Tentang</a></li>
+        <li><a href="biodata">Biodata</a></li>
         <li><a href="#contact">Kontak</a></li>
       </ul>
     </nav>
@@ -46,8 +46,8 @@ endif;
     <section id="home">
       <h2>Selamat Datang</h2>
       <?php
-      echo "halo dunia!<br>";
-      echo "nama saya hadi";
+      echo "halo!<br>";
+      echo "ini adalah halaman web UTS saya";
       ?>
       <p>Ini contoh paragraf HTML.</p>
     </section>
@@ -117,7 +117,7 @@ endif;
   </main>
 
   <footer>
-    <p>&copy; 2025 Yohanes Setiawan Japriadi [0344300002]</p>
+    <p>&copy; 2025 Maharani [2511500082]</p>
   </footer>
 
   <script src="script.js"></script>
