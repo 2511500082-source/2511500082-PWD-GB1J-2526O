@@ -7,5 +7,5 @@ Hari ini, Kamis 06 November 2025 saya belajar:<br>
 
 <ol>
   <li>copy seluruh file dari elearning (punya dosen) untuk latihan pertemuan-07</li>
-  <li>
+  <li>mengganti file index.php copy menjadi file get_proses.php</li>
 </ol>
