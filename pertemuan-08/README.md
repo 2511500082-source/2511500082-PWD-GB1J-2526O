@@ -12,4 +12,8 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>Menambahkan biodata sederhana mahasiswa</li>
   <li>membuat input</li>
+<<<<<<< HEAD
+=======
+  <li>mengisi section #about</li>
+>>>>>>> e7003f7946e1738bade5c24ae4d9fabd5936fd7a
 </ol>
