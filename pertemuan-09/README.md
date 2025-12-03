@@ -11,4 +11,5 @@
   <li>tangkap session dari file proses selesai</li>
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
+  <li>Mengganti file proses.php seperti modul</li>
 </ol>
