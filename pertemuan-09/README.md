@@ -17,4 +17,6 @@
   <li>mengganti file index.php pada baris 121-133</li>
   <li>menghapus isi section tentang saya</li>
   <li>menambah file baru fungsi.php</li>
+  <li>mengisi file fungsi.php</li>
+  <li>mengganti isi section about</li>
 </ol>
