@@ -12,4 +12,6 @@
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
   <li>Mengganti file proses.php seperti modul</li>
+  <li>menghapus file proses.php</li>
+  <li>mengganti file index.php pada baris 19-67</li>
 </ol>
