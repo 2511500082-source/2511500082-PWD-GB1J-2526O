@@ -15,4 +15,5 @@
   <li>menghapus file proses.php</li>
   <li>mengganti file index.php pada baris 19-67</li>
   <li>mengganti file index.php pada baris 121-133</li>
+  <li>menghapus isi section tentang saya</li>
 </ol>
