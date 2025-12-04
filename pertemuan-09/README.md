@@ -19,4 +19,5 @@
   <li>menambah file baru fungsi.php</li>
   <li>mengisi file fungsi.php</li>
   <li>mengganti isi section about</li>
+  <li>memperbaiki kesalahan yang ada di file fungsi.php dan file index.php</li>
 </ol>
