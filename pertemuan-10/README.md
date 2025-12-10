@@ -11,4 +11,5 @@ Hari ini, Kamis 4 Desember 2025, saya mempelajari:
  <li>membuat tabel_tamu</li>
  <li>menambahkan isi file read.php</li>
  <li>membuat record tbl_tamu</li>
+ <li>menambahkan file read_inc.php</li>
  </ol>
