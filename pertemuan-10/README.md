@@ -12,4 +12,6 @@ Hari ini, Kamis 4 Desember 2025, saya mempelajari:
  <li>menambahkan isi file read.php</li>
  <li>membuat record tbl_tamu</li>
  <li>menambahkan file read_inc.php</li>
+ <li>mengubah file index.php baris 146</li>
+ <li>menghapus baris 133-141 di file index.php</li>
  </ol>
