@@ -9,4 +9,5 @@ Hari ini, Kamis 4 Desember 2025, saya mempelajari:
  <li>menambahkan file koneksi.php</li>
  <li>mengekstrak file SW yang dibahan ajar</li>
  <li>membuat tabel_tamu</li>
+ <li>menambahkan isi file read.php</li>
  </ol>
