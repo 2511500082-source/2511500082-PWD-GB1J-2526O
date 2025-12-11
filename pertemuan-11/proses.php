@@ -7,6 +7,7 @@ $arrContact = [
   "pesan" => $_POST["txtPesan"] ?? ""
 ];
 $_SESSION["contact"] = $arrContact;
+header("location: index.php#about");
 
 $arrBiodata = [
   "nim" => $_POST["txtNim"] ?? "",

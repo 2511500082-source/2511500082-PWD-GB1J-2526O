@@ -7,5 +7,5 @@ Hari ini, Kamis 11 Desember 2025, saya mempelajari:
 
 <ol>
  <li>menambahkan tabel_tamu</li>
- <li></li>
+ <li>menambahkan header di proses.php</li>
  </ol>
