@@ -39,6 +39,15 @@ if (!empty($errors)) {
     $_SESSION['flash_error'] = implode('<br>', $errors);
     redirect_ke('index.php#contact');
 }
+if (!empty($errors)) {
+    $_SESSION['old'] = [
+        'nama'  => $nama,
+        'email' => $email,
+        'pesan' => $pesan
+    ];
+    $_SESSION['flash_error'] = implode('<br>', $errors);
+    redirect_ke('index.php#contact');
+}
 header("Location: index.php#contact");
 exit;
 
