@@ -14,4 +14,5 @@ Hari ini, Kamis 11 Desember 2025, saya mempelajari:
  <li>mengubah data file index.php nama,email,pesan</li>
  <li>menambahkan kode request_method</li>
  <li>menambahkan kode data $POST</li>
+ <li>memperbaiki lagi kode proses.php</li>
  </ol>
