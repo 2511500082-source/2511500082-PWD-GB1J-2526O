@@ -12,4 +12,5 @@ Hari ini, Kamis 11 Desember 2025, saya mempelajari:
  <li>menambahkan flash message sukses di file index.php</li>
  <li>menambahkan flash message error di file index.php</li>
  <li>mengubah data file index.php nama,email,pesan</li>
+ <li>menambahkan kode request_method</li>
  </ol>
