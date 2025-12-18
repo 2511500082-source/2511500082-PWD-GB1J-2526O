@@ -10,4 +10,5 @@ Hari ini, Kamis 18 Desember 2025, saya mempelajari:
  <li>menambahkan tombol EDIT difile read.php</li>
  <li>memperbaiki file read.php</li>
  <li>menghapus 1 cid di file read.php</li>
+ <li>menambahkan kode session_start();</li>
 </ol>
