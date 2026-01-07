@@ -13,4 +13,5 @@ Hari ini, Kamis 18 Desember 2025, saya mempelajari:
  <li>menambahkan kode session_start();</li>
  <li>menambahkan kode penampil flash error di file read.php</li>
  <li>menambahkan file edit.php</li>
+ <li>menambahkan file proses_update.php</li>
 </ol>
