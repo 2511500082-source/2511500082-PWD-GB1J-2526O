@@ -9,4 +9,5 @@ Hari ini, Kamis 8 Januari 2026, saya mempelajari:
 <li>Mengekstrak bahan uas ke Vs code</li>
 <li>Menambahkan file rani.php</li>
 <li>Menampilkan biodata di file rani.php</li>
+<li>menambahkan file proses_biodata.php</li>
 </ol>

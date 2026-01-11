@@ -38,6 +38,7 @@
     <th>NIM</th>
     <th>Nama Lengkap</th>
     <th>Tempat Lahir</th>
+    <th>Tanggal Lahir</th>
     <th>Hobi</th>
     <th>Pasangan</th>
     <th>Pekerjaan</th>
@@ -50,15 +51,18 @@
   <?php while ($row = mysqli_fetch_assoc($q)): ?>
     <tr>
       <td><?= $i++ ?></td>
-      <td>
-        <a href="edit.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
-        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama']); ?>?')" href="proses_delete.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
+        <td>
+        <a href="edit_biodata.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
+
+        <a 
+        onclick="return confirm('Hapus data <?= htmlspecialchars($row['Nama_Lengkap']); ?> ?')"
+        href="proses_delete_biodata.php?cid=<?= (int)$row['cid']; ?>">
+        Delete</a>
       </td>
-      <td><?= $row['cid']; ?></td>
       <td><?= htmlspecialchars($row['NIM']); ?></td>
       <td><?= htmlspecialchars($row['Nama_Lengkap']); ?></td>
       <td><?= htmlspecialchars($row['Tempat_Lahir']); ?></td>
-      <td><?= htmlspecialchars($row['Tanggal Lahir']); ?></td>
+      <td><?= nl2br(htmlspecialchars($row['Tanggal_Lahir'])); ?></td>
       <td><?= htmlspecialchars($row['Hobi']); ?></td>
       <td><?= htmlspecialchars($row['Pasangan']); ?></td>
       <td><?= htmlspecialchars($row['Pekerjaan']); ?></td>
