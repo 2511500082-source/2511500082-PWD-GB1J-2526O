@@ -11,4 +11,5 @@ Hari ini, Kamis 8 Januari 2026, saya mempelajari:
 <li>Menampilkan biodata di file rani.php</li>
 <li>menambahkan file proses_biodata.php</li>
 <li>menambahkan file proses_update_biodata</li>
+<li>menambahkan file proses_delete_biodata</li>
 </ol>
