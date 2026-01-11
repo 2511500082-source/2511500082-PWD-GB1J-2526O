@@ -42,6 +42,14 @@ require_once __DIR__ . '/fungsi.php';
       <h2>Biodata Sederhana Mahasiswa</h2>
       <form action="proses_biodata.php" method="POST">
 
+      <?php if (isset($_SESSION['flash_biodata'])): ?>
+    <div style="background:#d4edda; padding:10px; border-radius:6px;">
+    <?= $_SESSION['flash_biodata']; ?>
+    </div>
+    <?php unset($_SESSION['flash_biodata']); ?>
+    <?php endif; ?>
+   
+
         <label for="txtNim"><span>NIM:</span>
           <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan NIM" required>
         </label>

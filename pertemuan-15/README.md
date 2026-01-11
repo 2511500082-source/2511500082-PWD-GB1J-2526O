@@ -12,4 +12,5 @@ Hari ini, Kamis 8 Januari 2026, saya mempelajari:
 <li>menambahkan file proses_biodata.php</li>
 <li>menambahkan file proses_update_biodata</li>
 <li>menambahkan file proses_delete_biodata</li>
+<li>memperbaiki file index dan proses_biodata</li>
 </ol>
