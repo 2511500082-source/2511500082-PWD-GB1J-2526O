@@ -55,10 +55,17 @@
         <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama']); ?>?')" href="proses_delete.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
       </td>
       <td><?= $row['cid']; ?></td>
-      <td><?= htmlspecialchars($row['cnama']); ?></td>
-      <td><?= htmlspecialchars($row['cemail']); ?></td>
-      <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
-      <td><?= formatTanggal(htmlspecialchars($row['dcreated_at'])); ?></td>
+      <td><?= htmlspecialchars($row['NIM']); ?></td>
+      <td><?= htmlspecialchars($row['Nama_Lengkap']); ?></td>
+      <td><?= htmlspecialchars($row['Tempat_Lahir']); ?></td>
+      <td><?= htmlspecialchars($row['Tanggal Lahir']); ?></td>
+      <td><?= htmlspecialchars($row['Hobi']); ?></td>
+      <td><?= htmlspecialchars($row['Pasangan']); ?></td>
+      <td><?= htmlspecialchars($row['Pekerjaan']); ?></td>
+      <td><?= htmlspecialchars($row['Nama_Ortu']); ?></td>
+      <td><?= htmlspecialchars($row['Nama_Kakak']); ?></td>
+      <td><?= htmlspecialchars($row['Nama_Adik']); ?></td>
+      <td><?= formatTanggal(htmlspecialchars($row['created_at'])); ?></td>
     </tr>
   <?php endwhile; ?>
 </table>
