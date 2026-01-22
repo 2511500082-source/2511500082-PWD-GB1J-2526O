@@ -15,4 +15,5 @@ Hari ini UAS, Kamis 22 Januari 2026, saya mempelajari:
 <li>menambahkan file edit_biodata.php</li>
 <li>mengubah isi file edit_biodata.php</li>
 <li>menambahkan proses_delete_biodata.php</li>
+<li>mengubah isi file ranicantik.php</li>
 </ol>

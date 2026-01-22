@@ -67,9 +67,15 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
 <?php if (mysqli_num_rows($q) > 0): ?>
   <?php $i = 1; ?>
   <?php while ($row = mysqli_fetch_assoc($q)): ?>
+
     <tr>
       <td><?= $i++; ?></td>
       <td>
+        <a onclick="return confirm('Yakin hapus data?')"
+   href="proses_delete_biodata.php?cid=<?= (int)$row['cid']; ?>">
+   Delete
+</a>
+
         <a href="edit_biodata.php?cid=<?= (int)$row['cid']; ?>">Edit</a> |
         <a onclick="return confirm('Hapus data <?= htmlspecialchars($row['Nama_Lengkap']); ?> ?')"
            href="proses_delete_biodata.php?cid=<?= (int)$row['cid']; ?>">
