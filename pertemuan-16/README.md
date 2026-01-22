@@ -9,4 +9,5 @@ Hari ini UAS, Kamis 22 Januari 2026, saya mempelajari:
 <li>mengekstrak file dari elearning</li>
 <li>membuat database di phpMyadmin</li>
 <li>menambahkan file ranicantik.php</li>
+<li>mengubah isi file ranicantik.php</li>
 </ol>
