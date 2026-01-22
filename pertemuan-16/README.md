@@ -13,4 +13,5 @@ Hari ini UAS, Kamis 22 Januari 2026, saya mempelajari:
 <li>menambahkan file proses_biodata.php</li>
 <li>mengubah isi file proses_biodata.php</li>
 <li>menambahkan file edit_biodata.php</li>
+<li>mengubah isi file edit_biodata.php</li>
 </ol>
